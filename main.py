@@ -16,8 +16,8 @@ app = Sanic()
 
 class GitlabAccess(object):
     def __init__(self):
-        # self.gl = gitlab.Gitlab(url='http://120.27.232.174/', private_token='eStJLJGDzGVMqHMomeu3', api_version='3')
-        self.gl = gitlab.Gitlab(url='http://git.in.codoon.com/', private_token='ZM3bTDozyEgfc7rGrkVw', api_version='3')
+        # self.gl = gitlab.Gitlab(url='http://127.0.0.1/', private_token='xxxxxxxx', api_version='3')
+        self.gl = gitlab.Gitlab(url='http://xxxx.com/', private_token='xxxxx', api_version='3')
 
     def get_project_obj(self, pro_id):
         return self.gl.projects.get(pro_id)
